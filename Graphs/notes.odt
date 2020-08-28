@@ -1,0 +1,26 @@
+
+Graph is connected or not?
+weighted or not?
+sparse or dense ?
+how to represent grpah A.matrix or A list?
+
+Problems In Graphs:
+
+DFS: Time: O(V+E) 
+    https://leetcode.com/problems/number-of-good-leaf-nodes-pairs
+    connected component:
+    find cycle in directed and undirected Graph
+    Topsort
+
+BFS: Time : O(V+E):
+    shortest path from a node in unweighted Graph
+
+    grid problems:
+        to_track the path need an array storing parent 
+        each parent [1.......n] parent[i]=node where i is brought into queue used for bfs by node.
+        
+        Dungeon Problems
+    Topsort
+
+
+    

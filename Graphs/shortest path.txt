@@ -1,0 +1,30 @@
+single source shortest path.
+1.Unweighted(cyclic/acyclic ,directed/undirected)-----> BFS
+    can use DFS except for acyclic:
+        eg: grpah has edges : 1-2,2-3,3-1 
+
+2. DAG : Topological ordering -> relaxation
+     in this we find a Topological order of graph
+     then start relaxing all neighbouring of vertex in Topological oreder
+     it may take O(N) for Topological sort but for a complete graph relaxation may take n(n-1) which make time complexity: O(N^2)
+
+3. no neative weights (cyclic/acyclic ,directed/undirected)-----> Dijkstra'shortest
+    In case of neative weights does not gruantee correct result.
+    Time:  highly depends on implementation
+    can be: 
+    Elogv for sparse graph ,implented using custom heap (update in logn) or priority queue
+    V^2 when implented using array
+
+4. with or without neative edges(overcome Dijkstra limitation)but without negative cycle--------> Bellmanford Algorithm
+    worst possible time is O(n^2 ) when the orderin edges is reverse to the order they get relaxed
+    for ex: 1-2,2-3,3-4 are edges and we need find sssp from 4 ,
+    so to relax all vertex to whether it can't be relaxed further ,we need n-1 loop and each we traverse to seen if any vertex can be relaxed
+    -can be used to detect negative cycle 
+    - since in worst possible scenario we need to n-1 loop to relax all possible vertex.
+    -if after that n-1 loop any vertex gets relaxed then this can only happen due to present of negative cycles.
+
+5. shortest path between every pair of graph:
+    
+
+
+        

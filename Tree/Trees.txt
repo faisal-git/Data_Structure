@@ -1,0 +1,45 @@
+-Tree are connected graphs with no cycle
+-Trees are well-known as a non-linear data structure.
+-They don’t store data in a linear way. They organize data hierarchically.
+-All Tree nodes are connected by links called edges. 
+-It’s an important part of trees, because it’s manages the relationship between nodes.
+-The height of a tree is the length of the longest path to a leaf.
+-The depth of a node is the length of the path to its root.
+@ types of Tree https://towardsdatascience.com/8-useful-tree-data-structures-worth-knowing-8532c7231e8c
+    1. General tree:
+        - A node can have any number of node
+        ex. folder structure in a filesystem
+
+    2. Binary tree
+        - A node can have atmost 2 children nodes [called (left and right)child]
+        ex: 
+            -Used by compilers to build syntax trees.
+            -Used to implement expression parsers and expression solvers.
+            -Used to store router-tables in routers.
+    3. Binary search tree
+        -Has a unique property known as the binary-search-tree property. 
+        -This property states that the value (or key) of the left child of a given node should be less than or equal to the parent value and the value of the right child should be greater than or equal to the parent value.
+        ex:
+            -Used to implement simple sorting algorithms.
+            -Can be used as priority queues.
+            -Used in many search applications where data are constantly entering and leaving.
+
+    4. AVL tree
+        -
+    5. Red-black tree
+    6. Splay tree
+    7. Treap
+    8. B-tree
+
+
+
+
+
+
+
+Traversal:
+1.DFS 2.BFS
+    types of DFS:
+        1. pre-order 2.inorder 3.post-order
+
+# threaded tree.
